@@ -1,0 +1,251 @@
+= SECTOR EDEN
+
+An open world adventure among the stars and planets of Sector Eden
+
+== Games to Play or Think About (they include elements I like)
+
+=== The Ones on Hand
+
+Heard about these, should look into and decide where and whether to put them::
+* Star Wolves 3 (look into the series, decide if worth to play all games)
+
+These games directly include the elements I would like to see in a space-opera space sim::
+* Elite Dangerous (a.k.a. Elite III) - looks nice, wonder how it feels like; maybe could get some ideas from how the high-speed flight was implemented, although it does have flaws I hear.
+* Starpoint Gemini III: Warlords (play through the story, think on extra things to do)
+* Starpoint Gemini II (finish main story, do some extra stuff)
+* Rebel Galaxy (play through the main plot at least) - the sub-system transportation model feels nice, what I miss is the space-highways that were done in Freelancer.
+* Nexus: The Jupiter Incident (play through)
+* X2 The Threat (play through the main plot)
+* X3 Terran Conflict (play through the plot-lines)
+* X3 Albion Prelude (play through the story lines, play up to getting a battleship and a small fleet)
+* X: Rebirth (play through the story)
+* Freelancer (remember)
+* EVE Online (read about, look at, see, think)
+
+These games are executed well and employ some great elements in non space-sim gameplay::
+* Stellaris - great plotlines and adventure ideas
+* Homeworld Remastered Collection (play for a while, win maybe) - some great weapon designs; sizeable fleets clashing may result in quite epic battle scenes.
+* Space Pirates and Zombies (have a second look, put in 4h or so and decide if should look deeper) - seemed to have interesting mechanics, should have a look
+
+=== Should Consider Getting
+
+* ?Space Pirates and Zombies 2 (do main campaign) - seems that the strategy element has been improved and interesting inter-fleet interactions added?
+
+== Travel Mechanics
+
+=== Idea 01
+
+I like the idea of having several speeds of transportation.
+
+* Normal - when near to densely populated areas (e.g. near planets where there are lots of stations and points of interest in close proximity to each other); also when in combat.
+* Cruise - "Full power to the engines!" Significantly faster, useful to get between more distant points of interest, especially when warp is not available.
+* Warp - The standard way to travel between significant places in a system. All developed planets have at least one warp-link in orbit. Larger ships could have a warp-drive of their own, allowing the ship to enter warp speed independently and steer during warp travel. Having a warp drive on board would allow for independent frontier exploration which is possible but gets really slow if using only Cruise speed.
+* Hyper Jump - The way to travel interstellar distances. All developed systems are supposed to have Hyper/Jump Gate, some secret places may be only accessible via wormhole.
+
+There are ways to pull vessels from warp or cruise speed and inhibit escape, in order to e.g. raid unprepared freighters etc.
+
+Hyper space is an exotic and little explored dimension, many epic, interesting, mysterious, and scary things could happen there. There may be more than one layer to it, there may be inhabitants native to the warp.
+
+==== How do People Colonize Systems not Linked to by a Wormhole or Jumpgate?
+
+Technology similar to that of jumpgates is used on jumpships. Performing an untethered jump (a precalculated free jump, as opposed to one made between two linked jumpgates) requires significant resources not even including the extravagant cost to build a jumpship.
+
+For example if a pirate organization would wish to have a hideout in uncharted space, even if they manage to steal a jumpship, the organization should be quite rich and powerful to be able to acquire the resources needed to perform jumps.
+
+==== Travel Speeds
+
+NOTE: The below ideas are, as of yet, highly experimental. The scale of ships, stations and other objects should be decided and will likely influence this. At the end of the day the purpose is that travel should feel good and the best approach to scale will be more apparent only when a working test model will be built.
+
+TIP: A normal interstellar trade run should take up to 15 minutes one way if not interrupted/raided.
+
+NOTE: In Rebel Galaxy, ones warp speed gets significantly slower the closer one is to massive objects (e.g. ships, asteroids).
+
+IMPORTANT: These rules were conjured up rather quickly, should think and test
+Some rules of thumb::
+* A normal journey between two places in a system (e.g. half a system apart) should not take much more than a minute.
+* A usual interstellar trade run should not take more than 15 minutes of travel time one way.
+* There should be opportunity for unusually long trade runs, crossing several sectors, most likely offering a substantial reward and involving greater risk.
+
+Example travel speeds::
+* normal 50-200m/s
+* cruise 1-4km/s (normal * 20)
+* warp 20km/s (cruise * 10)
+
+==== Differences Between Ships
+
+Top speeds between ships probably should not differ by a lot, but turn rates can be quite different (e.g. clumsy bulky freighter would turn much slower than a nimble gunship; a capital ships and super freighters would be much slower at turning than most ships and would mainly rely on turrets and/or support ships to fend of small hostiles).
+Clumsier ships should normally take much longer to enter cruise and warp speeds too.
+
+=== Idea 02
+
+If I want to make a more realistic model with real-size planets and solar systems with orbital motion etc, other travel mechanics come to mind.
+
+==== Interplanetary Travel
+
+A ship can have have the realistic motion model accelerating at a certain force while there is enough fuel (or energy if we go that route). For the sake of fun and the fi in sci-fi the specific impulse can be huge and acceleration uqite lagre.
+
+Need to do some math, how fast would one be able to travel (using max acceleration - decceleration model) and how much Gs would one have to pull to not make time ridiculous from the gaming perspective.
+
+Too keep combat between ships more fun and closer to aircraft dogfighting while not extending interplanetary travel above international flight times the craft should use two modes of propulsion. Let's call them thrusters and warp drive. Thrusters could provide thrust in the area of 1 to 3 earth gravities and the warp drive should do a thousand times that.
+
+.acceleration and travel times using a 1G capable ship
+|=============================================================================================================
+|Route\Thrust                |MK-0 1G   |MK-1(1000G)|MK-2(2000G)|MK-3(4000G)|MK-4(8000G)|MK-5(16000G)|10000G  
+|Earth -> Moon 400Mm (max)   |03:35:00  |00:06:46   |00000000   |00:03:24   |00000000   |00:01:42    |00:02:08
+|Earth -> Mars 0.5AU (min)   |48:32:10  |01:32:00   |00000000   |00:46:02   |00000000   |00:23:02    |00:29:08
+|Earth -> Mars 2.5AU (max)   |108:31:48 |03:26:00   |00000000   |01:42:58   |00000000   |00:51:28    |01:05:08
+|Earth -> Jupiter 6AU        |168:08:02 |05:19:00   |00000000   |02:39:30   |00000000   |01:19:46    |01:40:52
+|Neptune -> Pluto (max) 80AU |613:56:20 |19:25:00   |00000000   |09:42:26   |00000000   |04:51:14    |06:08:22
+|Across Sol system 200AU     |970:42:22 |30:42:00   |21:42:22   |15:20:54   |10:51:10   |07:40:28    |09:42:26
+|=============================================================================================================
+
+.acceleration and travel times using a 3G capable ship
+|=================================================================================================================
+|Route\Thrust                |MK-0 3G   |MK-1(3000G) |MK-2(6000G) |MK-3(12000G)|MK-4(24000G)|MK-5(48000G)|20000G  
+|Earth -> Moon 400Mm (max)   |02:03:34  |00:03:54    |00000000    |00:01:58    |00000000    |00:00:58    |00000000
+|Earth -> Mars 0.5AU (min)   |28:01:20  |00:53:10    |00000000    |00:26:36    |00000000    |00:13:18    |00000000
+|Earth -> Mars 2.5AU (max)   |62:39:36  |01:58:54    |00000000    |00:59:26    |00000000    |00:29:44    |00000000
+|Earth -> Jupiter 6AU        |97:04:20  |03:04:10    |00000000    |01:32:06    |00000000    |00:46:02    |00000000
+|Neptune -> Pluto (max) 80AU |354:27:28 |11:12:32    |00000000    |05:36:16    |00000000    |02:48:08    |00000000
+|Across Sol system 200AU     |560:26:50 |17:43:22    |00000000    |08:51:42    |00000000    |04:25:50    |06:51:50
+|=================================================================================================================
+
+==== Interstellar Travel
+
+Now the question is should there be jumpgates or is it OK if most of the ships have a multi lightyear capable jump drive?
+
+===== Internal Jumpdrive
+
+The travel speed and fuel consumption should be affected by the effectiveness of the drive and how laden te ship is.
+
+===== Jumpgates
+
+==== Why Would Merchants Want Faster Engines?
+
+* To run away form pirates
+* To get to a market before the info tey got/bought is not too much out of date
+* To minimise operational costs (insurance payments, food consumption, ship upkeep)
+
+=== Sights
+
+There are quite a few fascinating things one could observe in space some phenomena so small it is difficult to locate even if one is withing a few AUs some spanning dozens of systems.
+
+CAUTION: Below ideas are a result of a brainstorm, implementation difficulty not considered.
+
+The Smaller Phenomena::
+* Exotic planets
+** Beautiful atmospheric lights on dusk/dawn.
+** Criss-cross planetary rings.
+** Volcanic hyperactivity.
+** Large ring of ice.
+** Many large moons (especially when around a gas giant).
+** Tidally locked planets
+* Small gas clouds
+* Debris fields
+* Ice clouds
+* Small asteroid fields
+* Cracked or shattered planets.
+* Eye-candy phenomena: condensed spherical anomalies and other unexplained pretty and, sometimes quite dangerous, things.
+
+=== Additional Notes on Travelling
+
+One has to feel his place and the distance one has covered visually. In the form of the changing skyscape and maybe other things e.g. if you jump into a star system that is within a nebula, that nebula will have had been visible from several systems away and should have had been covering more and more of the skyscape as you were getting closer until finally you have reached the system that is inside. An example of this are the sky-boxes of Freelancer with different nebulae in different corners of the sector, the specific cloud gets more and more sky-box real estate as one is getting closer to it and the sky - and often the environment - inside the inner nebula systems represents ones location visually e.g. with the tails of the elongated cloud of ice extending opposite directions of you when you are in a system that is in the middle of the cloud (this was the Great Barrier that Bretonia resided in if I recall correctly). I've heard that Elide Dangerous does this too and does it well, but I have not yet seen for myself.
+
+== Things to Do
+
+=== Trading Ideas
+
+Different things should influence the supply and prices of goods::
+* random events that can disrupt the economy temporarily (at rare occasion permanently e.g. new factories built or old ones closed/sabotaged or resources depleted) some of which could have chain events that could be influenced by the player (Rebel Galaxy has a neat idea, which could be done better)
+* supply and demand should influence the prices heavily
+* some regions and places should have certain characteristics depending on the role of the sector in the economy and depending on preferences and culture of the general local society. (e.g. one half of a system or sector typically buys luxury clothes and diamonds at a higher price than is common in the general region)
+* factions
+
+==== Cargo
+
+* The cargo capacity should be measured my volume (square metres)
+* The cargo weight should impact ship performance
+
+==== Different Economies
+
+Production::
+* Extraction (extraction of minerals, gasses, etc)
+* Processing (processing raw minerals, gasses, etc to alloys, synthetic polymers, synthetic fabrics, fabrics, chemicals, etc)
+* Manufacture (turning processed materials to manufactured goods e.g. machinery, components, plating, basic consumer tech, clothing, etc)
+* High Tech (technology, computer systems, consumer tech)
+* Agriculture (foodstuffs, textiles)
+
+Specialised settlement::
+* Research
+* Tourism
+* Service
+* Military
+* Trade Hub
+
+General settlements::
+* Terrafforming
+* Colony
+
+Very temporary states::
+* Damaged
+* Rescue operation
+* Repair operation
+* Under construction
+
+Some additional questions::
+* processed foods: probably quite more likely to be made in processing economies than agricultural
+* where is jewlery and luxury clothing, maybe locally in trade hubs?
+
+=== Mission Ideas
+
+* Assasination
+** Person assassination
+** Group assassination
+* Intelligence ops
+** Sabotage
+*** Bugging a ship (plant tracker, etc)
+*** Destruction of installation(s)
+*** Destruction of ships
+*** Destruction of other property
+** Reconnaissance
+*** Locate person
+*** Locate group
+*** Locate resource
+*** Identify equipment acquired by group or person.
+**** Investigate station warehouse for items owned by person or group.
+**** Investigate what ships a person or group owns.
+**** Investigate what installations somebody possesses or has access to.
+** Infiltration
+*** Group (achieve certain standing, etc)
+*** Installation (gain access to, achieve local reputation, etc)
+*** Steal access token (e.g. RFID card) or code
+*** Steal ID for counterfeiting
+* Theft
+** Steal/get info
+** Steal item
+** Steal ship
+* Retrieval
+** Return a certain ship intact.
+** Return certain part/data from stolen property.
+** Return a stolen cargo item.
+
+=== Pirating
+
+Capture ships, build stations in hidden locations, rob traders, defend your teritory, tread lightly - intrude too often and/or too deep in the territory of certain organisations and you may get more heat than you can handle.
+
+=== Bounty Hunting
+
+Bounties can be on persons, groups/bands, ships, stations.
+
+== Questions to Answer
+
+* How should the points of interest be organized? Various ideas below:
+** freelancer-like clusters of one of more stations at trade route intersections and ends, usually four or more per system. In addition, there are more secluded stations away from common routes, usually hidden (e.g. in dust clouds).
+** example from X2/3/4 - the stations are quite widely dispersed in a rather compact but not quite small region near/between gates.
+** how is it done in Starpoint Gemini?
+** how is it done if Rebel Galaxy?
+
+== Terminology Legend
+
+* System - A solar system or similar phenomenon of relative interest and importance.
+* Sector/Constellation - A defined collection of systems.
